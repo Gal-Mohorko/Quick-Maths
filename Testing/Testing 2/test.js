@@ -1,15 +1,15 @@
-//_ Defining maximum number of characters in answer box
-answer.oninput = function () {
-  if (this.value.lenght > 0);
+//_ Defining max. number of characters in answer box
+user_input.oninput = function () {
+  if (this.value.length > 0);
   this.value = this.value.slice(0, 3);
 };
 
 //_ Submitting by pressing Enter key
-var submitting = document.getElementById("answer");
+var submitting = document.getElementById("user_input");
 submitting.addEventListener("keyup", function (event) {
   if (event.keyCode === 13) {
     event.preventDefault();
-    var not_0 = document.getElementById("answer").value;
+    var not_0 = document.getElementById("user_input").value;
     if (not_0 === "") {
       return false;
     } else {
@@ -17,45 +17,39 @@ submitting.addEventListener("keyup", function (event) {
     }
   }
 });
-
 //. Global game counter
 game_counter = 0;
 
 //_ Generating 2 random numbers
+//. Generating
 function random_generation() {
-  //. The generation
   let first_random_number = Math.floor(Math.random() * 100);
   let second_random_number = Math.floor(Math.random() * 100);
-
-  //. Making the 2 numbers global
+  //. Making the 2 numbers global for return_text() function
   first_global = first_random_number;
   second_global = second_random_number;
-
-  //. Writing them in HTML
+  //. Writing in HTML
   document.getElementById("first_number").innerHTML = first_random_number;
   document.getElementById("second_number").innerHTML = second_random_number;
 }
 
 //_ The main function
-function submission() {
-  //. Getting the answer from answer box and parsing into Int
-  let user_answer = parseInt(document.getElementById("answer").value);
-
+function return_text() {
+  //. Getting the answer the user wrote
+  let user_answer_string = document.getElementById("user_input").value;
+  let user_answer = parseInt(user_answer_string);
+  console.log("Your answer is: " + user_answer);
   //. Calculating the sum of the 2 numbers
-  let addition_result = first_global + second_global;
+  let number_sum = first_global + second_global;
+  console.log("The sum is: " + number_sum);
 
-  //. Checking if result and answer match
-  if (user_answer === addition_result) {
+  if (user_answer === number_sum) {
     game_counter += 1;
-    document.getElementById("score").innerHTML = game_counter + " / 20 Correct";
-  } else {
-    document.getElementById("score").innerHTML = game_counter + " / 20 Correct";
+    console.log(game_counter);
   }
 
-  document.getElementById("answer").value = "";
+  document.getElementById("user_input").value = "";
   return random_generation();
 }
 
-
-
-random_generation();
+random_generation()

@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+}
+
+
+#container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center; /* Horizontal */
+    justify-content: center; /* Vertical */
+    flex-direction: column;
+}
+
+#result_outer_div {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#score {
+    margin-right: 8%;
+    margin-top: 4%;
+}
+
+#equation_outer_div {
+    height: 100vh;
+}
+
+.top {
+    display: flex;
+}
+
+#submit_button {
+    display: none;
+}
+

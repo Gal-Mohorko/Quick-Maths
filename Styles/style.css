@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-family: Poppins, sans-serif;
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+}
+
+.score_outer_div {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#score {
+  margin-right: 8%;
+  margin-top: 4%;
+}
+
+.equation_outer_div {
+  height: 100vh;
+}
+
+.equation {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 6px;
+}
+
+.top {
+  display: flex;
+}
+
+.bottom {
+  display: block;
+  text-align: center;
+}
+
+.answer_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#answer {
+  all: unset;
+  border: 2px solid black;
+  border-radius: 8px;
+  margin-left: 15px;
+  width: 75px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 3px;
+}
+
+#submit_button {
+  display: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+Firefox input[type=number] {
+  appearance: textfield;
+}
+
+::placeholder {
+  color: #898989;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #898989;
+}
+
+::-ms-input-placeholder {
+  color: #898989;
+}/*# sourceMappingURL=style.css.map */
