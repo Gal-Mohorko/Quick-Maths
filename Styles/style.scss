@@ -77,6 +77,40 @@ html {
 }
 
 // ## [END] ---------------- Equation ---------------- [END]
+
+// ## [START] ---------------- The End ---------------- [START]
+
+.the_end {
+  text-align: center;
+  height: 300vh;
+}
+
+#end_title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+#end_subtitle {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+#restart_button {
+  all: unset;
+  border: 2px solid #2d2d2d;
+  border-radius: 10px;
+  padding: 6px;
+  margin-top: 10px;
+  // transition-property: background-color;
+}
+
+#restart_button:hover {
+  transition-duration: 0.35s;
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+// ## [END] ---------------- The End ---------------- [END]
 // ! Hiding arrow up and down button when entering number in input
 // Chrome, Safari, Edge, Opera
 input::-webkit-outer-spin-button,
@@ -85,8 +119,7 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-Firefox
-input[type=number] {
+Firefox input[type="number"] {
   appearance: textfield;
 }
 

@@ -70,6 +70,35 @@ html {
   display: none;
 }
 
+.the_end {
+  text-align: center;
+  height: 300vh;
+}
+
+#end_title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+#end_subtitle {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+#restart_button {
+  all: unset;
+  border: 2px solid #2d2d2d;
+  border-radius: 10px;
+  padding: 6px;
+  margin-top: 10px;
+}
+
+#restart_button:hover {
+  transition-duration: 0.35s;
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   appearance: none;
