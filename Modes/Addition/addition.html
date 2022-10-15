@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Addition</title>
+    
+    <link rel="stylesheet" href="Addition_Style/addition.css" />
+  </head>
+  <body>
+    <section class="main" id="container">
+        <div class="score_outer_div">
+          <span id="score">0 / 20 Correct</span>
+        </div>
+        <div class="equation_outer_div">
+          <div class="top">
+            <div class="equation" id="first_number">2</div>
+            <div class="equation" id="operator">+</div>
+            <div class="equation" id="second_number">7</div>
+            <div class="equation" id="equal_sign">=</div>
+            <div class="answer_wrap">
+              <input id="answer" type="number" placeholder="Result" />
+            </div>
+          </div>
+          <div class="bottom">
+            <button id="submit_button" onclick="submission()"></button>
+          </div>
+        </div>
+
+        <div class="the_end">
+          <h1 id="end_title">You've won!</h1>
+          <h3 id="end_subtitle">Do you want to try again?</h3>
+          <button id="restart_button" onclick="restart()">Click here</button>
+        </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -10,14 +10,12 @@ html {
 
 #container {
   display: flex;
-  align-items: center; // Horizontal when flex-direction: column;
-  justify-content: center; // Vertical when flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
   width: 100%;
   flex-direction: column;
 }
-
-// ## [START] ---------------- Score ---------------- [START]
 
 .score_outer_div {
   height: 100vh;
@@ -30,10 +28,6 @@ html {
   margin-right: 8%;
   margin-top: 4%;
 }
-
-// ## [END] ---------------- Score ---------------- [END]
-
-// ## [START] ---------------- Equation ---------------- [START]
 
 .equation_outer_div {
   height: 100vh;
@@ -76,10 +70,6 @@ html {
   display: none;
 }
 
-// ## [END] ---------------- Equation ---------------- [END]
-
-// ## [START] ---------------- The End ---------------- [START]
-
 .the_end {
   text-align: center;
   height: 300vh;
@@ -101,7 +91,6 @@ html {
   border-radius: 10px;
   padding: 6px;
   margin-top: 10px;
-  // transition-property: background-color;
 }
 
 #restart_button:hover {
@@ -110,32 +99,25 @@ html {
   cursor: pointer;
 }
 
-// ## [END] ---------------- The End ---------------- [END]
-// ! Hiding arrow up and down button when entering number in input
-// Chrome, Safari, Edge, Opera
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
 }
 
-Firefox input[type="number"] {
+Firefox input[type=number] {
   appearance: textfield;
 }
 
-// ! Changing placeholder color in number input
 ::placeholder {
-  // Chrome, Firefox, Opera, Safari 10.1+
   color: #898989;
-  opacity: 1; // Firefox
+  opacity: 1;
 }
 
 :-ms-input-placeholder {
-  // Internet Explorer 10-11
   color: #898989;
 }
 
 ::-ms-input-placeholder {
-  // Microsoft Edge
   color: #898989;
-}
+}/*# sourceMappingURL=addition.css.map */

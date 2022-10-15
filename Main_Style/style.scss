@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-family: Poppins, sans-serif;
+}
+
+#container {
+  display: flex;
+  align-items: center; // Horizontal when flex-direction: column;
+  justify-content: center; // Vertical when flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+}
+
+// ## [START] ---------------- Title ---------------- [START]
+
+.main_title {
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+
+.main_subtitle {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+// ## [END] ---------------- Title ---------------- [END]
+
+// ## [START] ---------------- Buttons ---------------- [START]
+
+a {
+    all: unset;
+}
+#addition, #substraction, #multiplication, #division {
+  all: unset;
+  border: 2px solid #2d2d2d;
+  border-radius: 10px;
+  padding: 2px 8px;
+  margin: 10px 2px 0;
+  font-size: 1rem;
+  
+}
+
+#addition:hover, #substraction:hover, #multiplication:hover, #division:hover {
+  transition-duration: 0.35s;
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+// ## [END] ---------------- Buttons ---------------- [END]

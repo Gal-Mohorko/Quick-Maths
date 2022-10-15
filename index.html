@@ -6,35 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quick Maths</title>
 
-    <script src="Other/jquery-3.6.1.js"></script>
-    <link rel="stylesheet" href="Styles/style.css" />
+    <link rel="stylesheet" href="Main_Style/style.css" />
   </head>
   <body>
-    <section class="main" id="container">
-        <div class="score_outer_div">
-          <span id="score">0 / 20 Correct</span>
-        </div>
-        <div class="equation_outer_div">
-          <div class="top">
-            <div class="equation" id="first_number">2</div>
-            <div class="equation" id="operator">+</div>
-            <div class="equation" id="second_number">7</div>
-            <div class="equation" id="equal_sign">=</div>
-            <div class="answer_wrap">
-              <input id="answer" type="number" placeholder="Result" />
-            </div>
-          </div>
-          <div class="bottom">
-            <button id="submit_button" onclick="submission()"></button>
-          </div>
-        </div>
+    <section id="container" class="main">
+      <h1 class="main_title">Quick Maths</h1>
+      <h2 class="main_subtitle">Test your quick math skills</h2>
 
-        <div class="the_end">
-          <h1 id="end_title">You've won!</h1>
-          <h3 id="end_subtitle">Do you want to try again?</h3>
-          <button id="restart_button" onclick="restart()">Click here</button>
-        </div>
+      <div id="button_outer_div">
+        <a href="Modes/Addition/addition.html">
+          <button id="addition">Addition</button>
+        </a>
+        <a href="Modes/Substraction/substraction.html">
+          <button id="substraction">Substraction</button>
+        </a>
+        <a href="Modes/Multiplication/multiplication.html">
+          <button id="multiplication">Multiplication</button>
+        </a>
+        <a href="Modes/Division/division.html">
+          <button id="division">Division</button>
+        </a>
+      </div>
     </section>
-    <script src="script.js"></script>
+
+    <script src="main.js"></script>
   </body>
 </html>
