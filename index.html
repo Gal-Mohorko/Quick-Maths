@@ -10,32 +10,31 @@
     <link rel="stylesheet" href="Styles/style.css" />
   </head>
   <body>
-    <div id="container">
-      <div class="score_outer_div">
-        <span id="score">0 / 20 Correct</span>
-      </div>
-      <div class="equation_outer_div">
-        <div class="top">
-          <div class="equation" id="first_number">2</div>
-          <div class="equation" id="operator">+</div>
-          <div class="equation" id="second_number">7</div>
-          <div class="equation" id="equal_sign">=</div>
-          <div class="answer_wrap">
-            <input id="answer" type="number" placeholder="Result" />
+    <section class="main" id="container">
+        <div class="score_outer_div">
+          <span id="score">0 / 20 Correct</span>
+        </div>
+        <div class="equation_outer_div">
+          <div class="top">
+            <div class="equation" id="first_number">2</div>
+            <div class="equation" id="operator">+</div>
+            <div class="equation" id="second_number">7</div>
+            <div class="equation" id="equal_sign">=</div>
+            <div class="answer_wrap">
+              <input id="answer" type="number" placeholder="Result" />
+            </div>
+          </div>
+          <div class="bottom">
+            <button id="submit_button" onclick="submission()"></button>
           </div>
         </div>
-        <div class="bottom">
-          <button id="submit_button" onclick="submission()"></button>
+
+        <div class="the_end">
+          <h1 id="end_title">You've won!</h1>
+          <h3 id="end_subtitle">Do you want to try again?</h3>
+          <button id="restart_button" onclick="restart()">Click here</button>
         </div>
-      </div>
-
-      <div class="the_end">
-        <h1 id="end_title">You've won!</h1>
-        <h3 id="end_subtitle">Do you want to try again?</h3>
-        <button id="restart_button" onclick="restart()">Click here</button>
-      </div>
-    </div>
-
+    </section>
     <script src="script.js"></script>
   </body>
 </html>

@@ -105,7 +105,7 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-Firefox input[type=number] {
+Firefox input[type="number"] {
   appearance: textfield;
 }
 
@@ -120,4 +120,4 @@ Firefox input[type=number] {
 
 ::-ms-input-placeholder {
   color: #898989;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */

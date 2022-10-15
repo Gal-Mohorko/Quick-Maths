@@ -25,7 +25,7 @@ game_counter = 0;
 
 //_ The random generation function
 function random_generation() {
-  //. Checks if game_counter is equal to 20, it returns to the_end(), otherwise does random_generation()
+  //. Checking if game_counter is equal to 20 & returns to the_end(), otherwise does random_generation()
   if (game_counter == 20) {
     return the_end();
   } else {
@@ -56,7 +56,7 @@ function submission() {
     game_counter += 1;
     document.getElementById("score").innerHTML = game_counter + " / 20 Correct";
   } else if (game_counter == 20) {
-    //. random_generation() already checks this, but it returns to the_end() if game_counter = 20
+    //. Checking if game_counter == 20
     return the_end();
   } else {
     //. Leaves the score the same, since the player did not get the answer right
